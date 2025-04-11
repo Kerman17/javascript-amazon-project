@@ -1,10 +1,25 @@
-import { cart, removeFromCart, updateDeliveryOption } from '../data/cart.js';
+import { cart, loadFromStorage, removeFromCart, updateDeliveryOption } from '../data/cart.js';
 import { products, loadProducts } from '../data/products.js';
 import { formatCurrency } from './utils/money.js'
 import dayjs from 'https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js'
 import { deliveryOptions } from '../data/deliveryOptions.js'
 // import '../data/backend-practice.js';
 
+
+async function loadPage() {
+  console.log('load page');
+
+  await console.log('function');
+
+  return 'value2';
+}
+
+loadPage().then((value) => {
+  console.log('next step');
+  console.log(value);
+});
+
+/*
 new Promise((resolve) => {
   loadProducts(() => {
     resolve();
