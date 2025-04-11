@@ -6,13 +6,16 @@ import { deliveryOptions } from '../data/deliveryOptions.js'
 // import '../data/backend-practice.js';
 
 
-async function loadPage() {
-  console.log('load page');
+// async function loadPage() {
 
-  await console.log('function');
+//   try {
+//     await console.log('function');
+//   } catch (error) {
+//     console.log('Unexpected error. Please try again later.')
+//   }
 
-  return 'value2';
-}
+//   return 'value2';
+// }
 
 loadPage().then((value) => {
   console.log('next step');
